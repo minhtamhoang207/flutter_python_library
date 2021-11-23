@@ -25,6 +25,6 @@ class SplashController extends GetxController{
 
   gotoLogin()async{
     await Future.delayed(Duration(seconds: 2));
-    Get.offNamed("/login");
+    Get.offNamed("/homepage");
   }
 }

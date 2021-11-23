@@ -17,7 +17,7 @@ class LoginController extends GetxController{
     print(loading);
     try{
       await loginService.login(username.value, password.value);
-      Get.offNamed("homepage");
+      Get.offNamed("/homepage");
       // await Future.delayed(Duration(milliseconds: 5000));
       Get.snackbar("Success", "Dang nhap thanh cong", backgroundColor: AppColors.GRAY.withOpacity(0.8));
       loading.toggle();
